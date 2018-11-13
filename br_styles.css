@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('tff');
+    font-family: dobkin;
+    src: url('DobkinPlain.woff') format('woff'), url('DobkinPlain.ttf') format('tff');
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 4
@@ -14,5 +21,63 @@
 */
 
 html {
+    background-color: bisque;
+
+}
+
+body {
     background-image: url(br_paper.png);
+    font-family: 'Libre Franklin',
+        sans-serif;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#firstnav {
+    display: grid;
+    grid-template-columns: repeat(5, .25fr);
+    padding-bottom: 100px;
+}
+
+ul#firstnav li a {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+ul#firstnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+
+}
+
+nav a:hover {
+    background: rgb(40, 40, 40);
+}
+
+article aside {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+article {
+    overflow: scroll;
+    width: 1200px;
+    height: 900px;
+
 }
